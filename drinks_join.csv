@@ -1,0 +1,195 @@
+﻿Country,beer_servings,spirit_servings,wine_servings,total_litres_of_pure_alcohol,Avg_temp_in_Celsius,Region,avg_servings,Majority Belief System
+Angola,217,57,45,5.9,21.55,Africa,110,Christianity
+Benin,34,4,13,1.1,27.55,Africa,17,Christianity
+Botswana,173,35,35,5.4,21.5,Africa,81,Christianity
+Burkina Faso,25,7,7,4.3,28.25,Africa,13,Islam
+Burundi,88,0,0,6.3,19.8,Africa,29,Christianity
+Cabo Verde,144,56,16,4,23.3,Africa,72,Christianity
+Cameroon,147,1,4,5.8,24.6,Africa,51,Christianity
+Central African Republic,17,2,1,1.8,24.9,Africa,6.7,Christianity
+Chad,15,1,1,0.4,26.55,Africa,5.7,Islam
+Comoros,1,3,1,0.1,25.55,Africa,1.7,Islam
+Congo,76,1,9,1.7,24.55,Africa,29,NA
+Cote d'Ivoire,37,1,7,4,26.35,Africa,15,Christianity
+Djibouti,15,44,3,1.1,28,Africa,21,Islam
+DR Congo,32,3,1,2.3,24,Africa,12,Christianity
+Egypt,6,4,1,0.2,22.1,Africa,3.7,Islam
+Equatorial Guinea,92,0,233,5.8,24.55,Africa,110,Christianity
+Eritrea,18,0,0,0.5,25.5,Africa,6,Christianity
+Eswatini (Swaziland),90,2,2,4.7,21.4,Africa,31,Christianity
+Ethiopia,20,3,0,0.7,22.2,Africa,7.7,Christianity
+Gabon,347,98,59,8.9,25.05,Africa,170,Christianity
+Gambia,8,0,1,2.4,27.5,Africa,3,Islam
+Ghana,31,3,10,1.8,27.2,Africa,15,Christianity
+Guinea,9,0,2,0.2,25.7,Africa,3.7,Islam
+Guinea-Bissau,28,31,21,2.5,26.75,Africa,27,Islam
+Kenya,58,22,2,1.8,24.75,Africa,27,Christianity
+Lesotho,82,29,0,2.8,11.85,Africa,37,Christianity
+Libya,0,0,0,0,21.8,Africa,0,Islam
+Madagascar,26,15,4,0.8,22.65,Africa,15,Christianity
+Malawi,8,11,1,1.5,21.9,Africa,6.7,Christianity
+Mali,5,1,1,0.6,28.25,Africa,2.3,Islam
+Mauritania,0,0,0,0,27.65,Africa,0,Islam
+Mauritius,98,31,18,2.6,22.4,Africa,49,Hinduism
+Monaco,0,0,0,0,13.55,Africa,0,Christianity
+Morocco,12,6,10,0.5,17.1,Africa,9.3,Islam
+Mozambique,47,18,5,1.3,23.8,Africa,23,Christianity
+Namibia,376,3,1,6.8,19.95,Africa,130,Christianity
+Niger,3,2,1,0.1,27.15,Africa,2,Islam
+Nigeria,42,5,2,9.1,26.8,Africa,16,Christianity
+Rwanda,43,2,0,6.8,17.85,Africa,15,Christianity
+Sao Tome & Principe,56,38,140,4.2,23.75,Africa,78,Christianity
+Senegal,9,1,7,0.3,27.85,Africa,5.7,Islam
+Seychelles,157,25,51,4.1,27.15,Africa,78,Christianity
+Sierra Leone,25,3,2,6.7,26.05,Africa,10,Islam
+Somalia,0,0,0,0,27.05,Africa,0,Islam
+South Africa,225,76,81,8.2,17.75,Africa,130,Christianity
+Sudan,8,13,0,1.7,26.9,Africa,7,Islam
+Suriname,128,178,7,5.6,25.7,Africa,100,Christianity
+Tanzania,36,6,1,5.7,22.35,Africa,14,Christianity
+Togo,36,2,19,1.3,27.15,Africa,19,Christianity
+Tunisia,51,3,20,1.3,19.2,Africa,25,Islam
+Uganda,45,9,0,8.3,22.8,Africa,18,Christianity
+Zambia,32,19,4,2.5,21.4,Africa,18,Christianity
+Zimbabwe,64,18,4,4.7,21,Africa,29,Christianity
+Afghanistan,0,0,0,0,12.6,Asia,0,Islam
+Bangladesh,0,0,0,0,25,Asia,0,Islam
+Bhutan,23,0,0,0.4,7.4,Asia,7.7,Buddhism
+Brunei,31,2,1,0.6,26.85,Asia,11,Islam
+Cambodia,57,65,1,2.2,26.8,Asia,41,Buddhism
+China,79,192,8,5,6.95,Asia,93,Unaffiliated
+Fiji,77,35,1,2,24.4,Asia,38,Christianity
+India,9,114,0,2.2,23.65,Asia,41,Hinduism
+Indonesia,5,1,0,0.1,25.85,Asia,2,Islam
+Iran,0,0,0,0,17.25,Asia,0,Islam
+Japan,77,202,16,7,11.15,Asia,98,Unaffiliated
+Kazakhstan,124,246,12,6.8,6.4,Asia,130,Islam
+Laos,62,0,123,6.2,22.8,Asia,62,Buddhism
+Malaysia,13,4,0,0.3,25.4,Asia,5.7,Islam
+Maldives,0,0,0,0,27.65,Asia,0,Islam
+Mongolia,77,189,8,4.9,-0.7,Asia,91,Buddhism
+Myanmar,5,1,0,0.1,13.05,Asia,2,Buddhism
+Nepal,5,6,0,0.2,8.1,Asia,3.7,Hinduism
+North Korea,0,0,0,0,5.7,Asia,0,Unaffiliated
+Philippines,71,186,1,4.6,25.85,Asia,86,Christianity
+Russia,247,326,73,11.5,-5.1,Asia,220,Christianity
+Singapore,60,12,11,1.5,26.45,Asia,28,Buddhism
+South Korea,140,16,9,9.8,11.5,Asia,55,Unaffiliated
+Sri Lanka,16,104,0,2.2,26.95,Asia,40,Buddhism
+Thailand,99,258,1,6.4,26.3,Asia,120,Buddhism
+Timor-Leste,1,1,4,0.1,25.25,Asia,2,Christianity
+Vietnam,111,2,1,2,24.45,Asia,38,Folk Religions
+Antigua & Barbuda,102,128,45,4.9,26,Caribbean,92,Christianity
+Bahamas,122,176,51,6.3,24.85,Caribbean,120,Christianity
+Barbados,143,173,36,6.3,26,Caribbean,120,Christianity
+Cuba,93,137,5,4.2,25.2,Caribbean,78,Christianity
+Dominica,52,286,26,6.6,22.35,Caribbean,120,Christianity
+Dominican Republic,193,147,9,6.2,24.55,Caribbean,120,Christianity
+Grenada,199,438,28,11.9,26.65,Caribbean,220,Christianity
+Haiti,1,326,1,5.9,24.9,Caribbean,110,Christianity
+Jamaica,82,97,9,3.4,24.95,Caribbean,63,Christianity
+St. Kitts & Nevis,194,205,32,7.7,24.5,Caribbean,140,Christianity
+St. Lucia,171,315,71,10.1,25.5,Caribbean,190,Christianity
+St. Vincent & the Grenadines,120,221,11,6.3,26.8,Caribbean,120,Christianity
+Trinidad & Tobago,197,156,7,6.4,25.75,Caribbean,120,Christianity
+Albania,89,132,54,4.9,11.4,Europe,92,Islam
+Algeria,25,0,14,0.7,22.5,Europe,13,Islam
+Andorra,245,138,312,12.4,7.6,Europe,230,Christianity
+Armenia,21,179,11,3.8,7.15,Europe,70,Christianity
+Austria,279,75,191,9.7,6.35,Europe,180,Christianity
+Azerbaijan,21,46,5,1.3,11.95,Europe,24,Islam
+Belarus,142,373,42,14.4,6.15,Europe,190,Christianity
+Belgium,295,84,212,10.5,9.55,Europe,200,Christianity
+Bosnia-Herzegovina,76,173,8,4.6,9.85,Europe,86,Christianity
+Bulgaria,231,252,94,10.3,10.55,Europe,190,Christianity
+Croatia,230,87,254,10.2,10.9,Europe,190,Christianity
+Cyprus,192,154,113,8.2,18.45,Europe,150,Christianity
+Czech Republic,361,170,134,11.8,7.55,Europe,220,Unaffiliated
+Denmark,224,81,278,10.4,7.5,Europe,190,Christianity
+Estonia,224,194,59,9.5,5.1,Europe,160,Unaffiliated
+Finland,263,133,97,10,1.7,Europe,160,Christianity
+France,127,151,370,11.8,10.7,Europe,220,Christianity
+Georgia,52,100,149,5.4,5.8,Europe,100,Christianity
+Germany,346,117,175,11.3,8.5,Europe,210,Christianity
+Greece,133,112,218,8.3,15.4,Europe,150,Christianity
+Hungary,234,215,185,11.3,9.75,Europe,210,Christianity
+Iceland,233,61,78,6.6,1.75,Europe,120,Christianity
+Ireland,313,118,165,11.4,9.3,Europe,200,Christianity
+Italy,85,42,237,6.5,13.45,Europe,120,Christianity
+Latvia,281,216,62,10.5,5.6,Europe,190,Christianity
+Liberia,19,152,2,3.1,25.3,Europe,58,Christianity
+Liechtenstein,NA,NA,NA,NA,5.65,Europe,NA,Christianity
+Lithuania,343,244,56,12.9,6.2,Europe,210,Christianity
+Luxembourg,236,133,271,11.4,8.65,Europe,210,Christianity
+Macedonia,106,27,86,3.9,9.8,Europe,73,Christianity
+Malta,149,100,120,6.6,19.2,Europe,120,Christianity
+Moldova,109,226,18,6.3,9.45,Europe,120,Christianity
+Montenegro,31,114,128,4.9,10.55,Europe,91,Christianity
+Netherlands,251,88,190,9.4,9.25,Europe,180,Christianity
+Norway,169,71,129,6.7,1.5,Europe,120,Christianity
+Poland,343,215,56,10.9,7.85,Europe,200,Christianity
+Portugal,194,67,339,11,15.15,Europe,200,Christianity
+Romania,297,122,167,10.4,8.8,Europe,200,Christianity
+San Marino,0,0,0,0,11.85,Europe,0,Christianity
+Serbia,283,131,127,9.6,10.55,Europe,180,Christianity
+Slovakia,196,293,116,11.4,6.8,Europe,200,Christianity
+Slovenia,270,51,276,10.6,8.9,Europe,200,Christianity
+Spain,284,157,112,10,13.3,Europe,180,Christianity
+Sweden,152,60,186,7.2,2.1,Europe,130,Christianity
+Switzerland,185,100,280,10.2,5.5,Europe,190,Christianity
+Ukraine,206,237,45,8.9,8.3,Europe,160,Christianity
+United Kingdom,219,126,195,10.4,8.45,Europe,180,Christianity
+Bahrain,42,63,7,2,27.15,Middle East,37,Islam
+Iraq,9,3,0,0.2,21.4,Middle East,4,Islam
+Israel,63,69,9,2.5,19.2,Middle East,47,Judaism
+Jordan,6,21,1,0.5,18.3,Middle East,9.3,Islam
+Kuwait,0,0,0,0,25.35,Middle East,0,Islam
+Kyrgyzstan,31,97,6,2.4,1.55,Asia,45,Islam
+Lebanon,20,55,31,1.9,16.4,Middle East,35,Islam
+Oman,22,16,1,0.7,25.6,Middle East,13,Islam
+Pakistan,0,0,0,0,20.2,Asia,0,Islam
+Qatar,1,42,7,0.9,27.15,Middle East,17,Islam
+Saudi Arabia,0,5,0,0.1,24.65,Middle East,1.7,Islam
+Syria,5,35,16,1,17.75,Middle East,19,Islam
+Tajikistan,2,15,0,0.3,2,Asia,5.7,Islam
+Turkey,51,22,7,1.4,11.1,Asia,27,Islam
+Turkmenistan,19,71,32,2.2,15.1,Asia,41,Islam
+United Arab Emirates,16,135,5,2.8,27,Middle East,52,Islam
+Uzbekistan,25,101,8,2.4,12.05,Middle East,45,Islam
+Yemen,6,0,0,0.1,23.85,Middle East,2,Islam
+Belize,263,114,8,6.8,25.3,N. America,130,Christianity
+Canada,240,122,100,8.2,-5.35,N. America,150,Christianity
+Costa Rica,149,87,11,4.4,24.8,N. America,82,Christianity
+El Salvador,52,69,2,2.2,24.45,N. America,41,Christianity
+Guatemala,53,69,2,2.2,23.45,N. America,41,Christianity
+Honduras,69,98,2,3,23.5,N. America,56,Christianity
+Mexico,238,68,5,5.5,21,N. America,100,Christianity
+Nicaragua,78,118,1,3.5,24.9,N. America,66,Christianity
+Panama,285,104,18,7.2,25.4,N. America,140,Christianity
+USA,249,158,84,8.7,8.55,N. America,160,Christianity
+Australia,261,72,212,10.4,21.65,Oceania,180,Christianity
+Cook Islands,0,254,74,5.9,NA,Oceania,110,Christianity
+Kiribati,21,34,1,1,28.2,Oceania,19,Christianity
+Marshall Islands,0,0,0,0,27.4,Oceania,0,Christianity
+Micronesia,62,50,18,2.3,25.85,Oceania,43,Christianity
+Nauru,49,0,8,1,NA,Oceania,19,Christianity
+New Zealand,203,79,175,9.3,10.55,Oceania,150,Christianity
+Niue,188,200,7,7,NA,Oceania,130,Christianity
+Palau,306,63,23,6.9,27.6,Oceania,130,Christianity
+Papua New Guinea,44,39,1,1.5,25.25,Oceania,28,Christianity
+Samoa,105,18,24,2.6,26.7,Oceania,49,Christianity
+Solomon Islands,56,11,1,1.2,25.65,Oceania,23,Christianity
+Tonga,36,21,5,1.1,25.25,Oceania,21,Christianity
+Tuvalu,6,41,9,1,28,Oceania,19,Christianity
+Vanuatu,21,18,11,0.9,23.95,Oceania,17,Christianity
+Argentina,193,25,221,8.3,14.8,S. America,150,Christianity
+Bolivia,167,41,8,3.8,21.55,S. America,72,Christianity
+Brazil,245,145,16,7.2,24.95,S. America,140,Christianity
+Chile,130,124,172,7.6,8.45,S. America,140,Christianity
+Colombia,159,76,3,4.2,24.5,S. America,79,Christianity
+Ecuador,162,74,3,4.2,21.85,S. America,80,Christianity
+Guyana,93,302,1,7.1,26,S. America,130,Christianity
+Paraguay,213,117,74,7.3,23.55,S. America,130,Christianity
+Peru,163,160,21,6.1,19.6,S. America,110,Christianity
+Uruguay,115,35,220,6.6,17.55,S. America,120,Christianity
+Venezuela,333,100,3,7.7,25.35,S. America,150,Christianity
