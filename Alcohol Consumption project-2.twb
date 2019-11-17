@@ -1,0 +1,1223 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.19.1107.2038                               -->
+<workbook original-version='18.1' source-build='2019.3.1 (20193.19.1017.1259)' source-platform='mac' version='18.1' xml:base='https://10ay.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <ISO8601DefaultCalendarPref ignorable='true' predowngraded='true' />
+    <MapboxVectorStylesAndLayers />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='http://localhost:9100/t/mariosmundson/workbooks/AlcoholConsumptionproject?rev=1.1' id='AlcoholConsumptionproject' path='/t/mariosmundson/workbooks' revision='1.2' site='mariosmundson' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='drinks_join (drinks_join)' inline='true' name='sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j' version='18.1'>
+      <repository-location id='drinks_joindrinks_join' path='/t/mariosmundson/datasources' revision='1.0' site='mariosmundson' />
+      <connection channel='https' class='sqlproxy' dbname='drinks_joindrinks_join' directory='dataserver' port='443' server='10ay.online.tableau.com' username='' workgroup-auth-mode='prompt'>
+        <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <calculations>
+          <calculation column='[Number of Records]' formula='1' />
+        </calculations>
+        <metadata-records>
+          <metadata-record class='measure'>
+            <remote-name>Average yearly temperature (1961‚Äì1990, degrees Celsius)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average yearly temperature (1961‚Äì1990, degrees Celsius)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Average yearly temperature (1961‚Äì1990, degrees Celsius)</remote-alias>
+            <ordinal>5</ordinal>
+            <layered>true</layered>
+            <family>drinks_join</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <layered>true</layered>
+            <family>drinks_join</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Majority Belief System</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Majority Belief System]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Majority Belief System</remote-alias>
+            <ordinal>8</ordinal>
+            <layered>true</layered>
+            <family>drinks_join</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>11</ordinal>
+            <layered>true</layered>
+            <caption>Number of Records</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;1&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>6</ordinal>
+            <layered>true</layered>
+            <family>drinks_join</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>avg_servings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_servings]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>avg_servings</remote-alias>
+            <ordinal>7</ordinal>
+            <layered>true</layered>
+            <caption>Avg Servings</caption>
+            <family>drinks_join</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>beer_servings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[beer_servings]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>beer_servings</remote-alias>
+            <ordinal>1</ordinal>
+            <layered>true</layered>
+            <caption>Beer Servings</caption>
+            <family>drinks_join</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>spirit_servings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[spirit_servings]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>spirit_servings</remote-alias>
+            <ordinal>2</ordinal>
+            <layered>true</layered>
+            <caption>Spirit Servings</caption>
+            <family>drinks_join</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>total_litres_of_pure_alcohol</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_litres_of_pure_alcohol]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>total_litres_of_pure_alcohol</remote-alias>
+            <ordinal>4</ordinal>
+            <layered>true</layered>
+            <caption>Total Litres Of Pure Alcohol</caption>
+            <family>drinks_join</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>wine_servings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wine_servings]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>wine_servings</remote-alias>
+            <ordinal>3</ordinal>
+            <layered>true</layered>
+            <caption>Wine Servings</caption>
+            <family>drinks_join</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='boolean' name='CAP_CREATE_TEMP_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES'>false</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_CASE_INSENSITIVE_CONTAINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_EXTRACT_RANGES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SORT_BY'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERIES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORTS_LODJOINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORT_ANALYTIC_FUNCTIONS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_TOP_N'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_USE_QUERY_FUSION'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_LEFT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_RIGHT'>true</attribute>
+              <attribute datatype='integer' name='charset'>0</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='datasource'>&quot;&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos; ?&gt;&#10;&#10;&lt;datasource :source-version=&apos;18.1&apos; formatted-name=&apos;drinks_join (drinks_join)&apos; inline=&apos;true&apos; version=&apos;18.1&apos; xml:base=&apos;https://10ay.online.tableau.com&apos; xmlns:user=&apos;http://www.tableausoftware.com/xml/user&apos;&gt;&#10;  &lt;repository-location id=&apos;drinks_joindrinks_join&apos; path=&apos;/t/mariosmundson/datasources&apos; revision=&apos;1.0&apos; site=&apos;mariosmundson&apos; /&gt;&#10;  &lt;connection channel=&apos;https&apos; class=&apos;sqlproxy&apos; dbname=&apos;drinks_joindrinks_join&apos; directory=&apos;dataserver&apos; port=&apos;443&apos; server=&apos;10ay.online.tableau.com&apos;&gt;&#10;    &lt;relation name=&apos;sqlproxy&apos; table=&apos;[sqlproxy]&apos; type=&apos;table&apos; /&gt;&#10;    &lt;cols&gt;&#10;      &lt;map key=&apos;[Average yearly temperature (1961‚Äì1990, degrees Celsius)]&apos; value=&apos;[sqlproxy].[Average yearly temperature (1961‚Äì1990, degrees Celsius)]&apos; /&gt;&#10;      &lt;map key=&apos;[Country]&apos; value=&apos;[sqlproxy].[Country]&apos; /&gt;&#10;      &lt;map key=&apos;[Majority Belief System]&apos; value=&apos;[sqlproxy].[Majority Belief System]&apos; /&gt;&#10;      &lt;map key=&apos;[Number of Records]&apos; value=&apos;[sqlproxy].[Number of Records]&apos; /&gt;&#10;      &lt;map key=&apos;[Region]&apos; value=&apos;[sqlproxy].[Region]&apos; /&gt;&#10;      &lt;map key=&apos;[avg_servings]&apos; value=&apos;[sqlproxy].[avg_servings]&apos; /&gt;&#10;      &lt;map key=&apos;[beer_servings]&apos; value=&apos;[sqlproxy].[beer_servings]&apos; /&gt;&#10;      &lt;map key=&apos;[spirit_servings]&apos; value=&apos;[sqlproxy].[spirit_servings]&apos; /&gt;&#10;      &lt;map key=&apos;[total_litres_of_pure_alcohol]&apos; value=&apos;[sqlproxy].[total_litres_of_pure_alcohol]&apos; /&gt;&#10;      &lt;map key=&apos;[wine_servings]&apos; value=&apos;[sqlproxy].[wine_servings]&apos; /&gt;&#10;    &lt;/cols&gt;&#10;  &lt;/connection&gt;&#10;  &lt;aliases enabled=&apos;yes&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; datatype=&apos;real&apos; default-type=&apos;ordinal&apos; name=&apos;[Average yearly temperature (1961‚Äì1990, degrees Celsius)]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;ordinal&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Country]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; semantic-role=&apos;[Country].[ISO3166_2]&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Majority Belief System]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Number of Records]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; user:auto-column=&apos;numrec&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;1&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Count&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Region]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; semantic-role=&apos;[Country].[Name]&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Avg Servings&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[avg_servings]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Beer Servings&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[beer_servings]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Spirit Servings&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[spirit_servings]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Total Litres Of Pure Alcohol&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[total_litres_of_pure_alcohol]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Wine Servings&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[wine_servings]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Average yearly temperature (1961‚Äì1990, degrees Celsius)]&apos; derivation=&apos;Attribute&apos; name=&apos;[attr:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&apos; pivot=&apos;key&apos; type=&apos;quantitative&apos; /&gt;&#10;  &lt;column-instance column=&apos;[avg_servings]&apos; derivation=&apos;Attribute&apos; name=&apos;[attr:avg_servings:qk]&apos; pivot=&apos;key&apos; type=&apos;quantitative&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Average yearly temperature (1961‚Äì1990, degrees Celsius)]&apos; derivation=&apos;Avg&apos; name=&apos;[avg:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&apos; pivot=&apos;key&apos; type=&apos;quantitative&apos; /&gt;&#10;  &lt;column-instance column=&apos;[avg_servings]&apos; derivation=&apos;Avg&apos; name=&apos;[avg:avg_servings:qk]&apos; pivot=&apos;key&apos; type=&apos;quantitative&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Average yearly temperature (1961‚Äì1990, degrees Celsius)]&apos; derivation=&apos;None&apos; name=&apos;[none:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&apos; pivot=&apos;key&apos; type=&apos;quantitative&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Majority Belief System]&apos; derivation=&apos;None&apos; name=&apos;[none:Majority Belief System:nk]&apos; pivot=&apos;key&apos; type=&apos;nominal&apos; /&gt;&#10;  &lt;column-instance column=&apos;[avg_servings]&apos; derivation=&apos;None&apos; name=&apos;[none:avg_servings:qk]&apos; pivot=&apos;key&apos; type=&apos;quantitative&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Average yearly temperature (1961‚Äì1990, degrees Celsius)]&apos; derivation=&apos;Sum&apos; name=&apos;[sum:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&apos; pivot=&apos;key&apos; type=&apos;quantitative&apos; /&gt;&#10;  &lt;column-instance column=&apos;[avg_servings]&apos; derivation=&apos;Sum&apos; name=&apos;[sum:avg_servings:qk]&apos; pivot=&apos;key&apos; type=&apos;quantitative&apos; /&gt;&#10;  &lt;layout dim-ordering=&apos;alphabetic&apos; dim-percentage=&apos;0.377649&apos; measure-ordering=&apos;alphabetic&apos; measure-percentage=&apos;0.622351&apos; show-structure=&apos;true&apos; /&gt;&#10;  &lt;style&gt;&#10;    &lt;style-rule element=&apos;mark&apos;&gt;&#10;      &lt;encoding attr=&apos;color&apos; field=&apos;[:Measure Names]&apos; type=&apos;palette&apos;&gt;&#10;        &lt;map to=&apos;\#4e79a7&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;[drinks_join (drinks_join)].[attr:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;\#4e79a7&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;[drinks_join (drinks_join)].[avg:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;\#4e79a7&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;[drinks_join (drinks_join)].[none:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;\#4e79a7&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;[drinks_join (drinks_join)].[sum:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;\#f28e2b&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;[drinks_join (drinks_join)].[attr:avg_servings:qk]&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;\#f28e2b&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;[drinks_join (drinks_join)].[avg:avg_servings:qk]&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;\#f28e2b&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;[drinks_join (drinks_join)].[none:avg_servings:qk]&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;\#f28e2b&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;[drinks_join (drinks_join)].[sum:avg_servings:qk]&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;      &lt;/encoding&gt;&#10;      &lt;encoding attr=&apos;shape&apos; field=&apos;[none:Majority Belief System:nk]&apos; type=&apos;shape&apos;&gt;&#10;        &lt;map to=&apos;asterisk&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;Islam&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;circle&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;Buddhism&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;diamond&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;Judaism&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;down-triangle&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;Unaffiliated&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;plus&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;Folk Religions&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;square&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;Christianity&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;times&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;Hinduism&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;triangle&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;NA&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;      &lt;/encoding&gt;&#10;    &lt;/style-rule&gt;&#10;  &lt;/style&gt;&#10;  &lt;semantic-values&gt;&#10;    &lt;semantic-value key=&apos;[Country].[Name]&apos; value=&apos;&amp;quot;United States&amp;quot;&apos; /&gt;&#10;  &lt;/semantic-values&gt;&#10;&lt;/datasource&gt;&#10;&quot;</attribute>
+              <attribute datatype='string' name='dialect-definition'>&quot;&lt;dialect-definition&gt;&#10;  &lt;primary-dialect class=&apos;hyper&apos; version=&apos;0.0.0&apos;&gt;&#10;  &lt;/primary-dialect&gt;&#10;&lt;/dialect-definition&gt;&#10;&quot;</attribute>
+              <attribute datatype='boolean' name='extract-active'>true</attribute>
+              <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
+              <attribute datatype='string' name='update-time'>&quot;11/10/2019 10:19:10 PM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <overridable-settings>
+        <date-options fiscal-year-start='january' start-of-week='sunday' />
+        <default-date-format />
+        <default-calendar-type>Gregorian</default-calendar-type>
+      </overridable-settings>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[Average yearly temperature (1961‚Äì1990, degrees Celsius)]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default'>
+        <semantic-values semantic-role='[Country].[Name]'>
+          <semantic-value key='&quot;Eswatini (Swaziland)&quot;' value='&quot;Eswatini&quot;' />
+        </semantic-values>
+      </column>
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Majority Belief System]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Number of Records]' pivot='key' role='measure' type='quantitative' user-datatype='integer' user:auto-column='numrec' visual-totals='Default'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Region]' pivot='key' role='dimension' semantic-role='[Country].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' caption='Avg Servings' datatype='real' default-type='quantitative' layered='true' name='[avg_servings]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Beer Servings' datatype='integer' default-type='quantitative' layered='true' name='[beer_servings]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' caption='Spirit Servings' datatype='integer' default-type='quantitative' layered='true' name='[spirit_servings]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' caption='Total Litres Of Pure Alcohol' datatype='real' default-type='quantitative' layered='true' name='[total_litres_of_pure_alcohol]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Wine Servings' datatype='integer' default-type='quantitative' layered='true' name='[wine_servings]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column-instance column='[Average yearly temperature (1961‚Äì1990, degrees Celsius)]' derivation='Attribute' name='[attr:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_servings]' derivation='Attribute' name='[attr:avg_servings:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Average yearly temperature (1961‚Äì1990, degrees Celsius)]' derivation='Avg' name='[avg:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_servings]' derivation='Avg' name='[avg:avg_servings:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Average yearly temperature (1961‚Äì1990, degrees Celsius)]' derivation='Count' name='[cnt:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Average yearly temperature (1961‚Äì1990, degrees Celsius)]' derivation='None' name='[none:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Majority Belief System]' derivation='None' name='[none:Majority Belief System:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[avg_servings]' derivation='None' name='[none:avg_servings:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Average yearly temperature (1961‚Äì1990, degrees Celsius)]' derivation='Sum' name='[sum:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_servings]' derivation='Sum' name='[sum:avg_servings:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.373494' measure-ordering='alphabetic' measure-percentage='0.626506' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[attr:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[avg:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[cnt:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[none:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[none:Majority Belief System:nk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[none:Region:nk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[sum:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[attr:avg_servings:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[avg:avg_servings:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[none:avg_servings:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[sum:avg_servings:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[none:Majority Belief System:nk]' type='shape'>
+            <map to='asterisk'>
+              <bucket>&quot;Islam&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;Buddhism&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;Judaism&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;Unaffiliated&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;Folk Religions&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;Christianity&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;Hinduism&quot;</bucket>
+            </map>
+            <map to='triangle'>
+              <bucket>&quot;NA&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Majority Belief System:nk]' palette='tableau10_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Buddhism&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Islam&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Hinduism&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;NA&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Folk Religions&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Judaism&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Christianity&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Unaffiliated&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='drinks_join (drinks_join) (2)' inline='true' name='sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)' version='18.1'>
+      <repository-location id='drinks_joindrinks_join' path='/t/mariosmundson/datasources' revision='1.0' site='mariosmundson' />
+      <connection channel='https' class='sqlproxy' dbname='drinks_joindrinks_join' directory='/dataserver' port='443' server='10ay.online.tableau.com' username='' workgroup-auth-mode='prompt'>
+        <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <calculations>
+          <calculation column='[Number of Records]' formula='1' />
+        </calculations>
+        <metadata-records>
+          <metadata-record class='measure'>
+            <remote-name>Average yearly temperature (1961‚Äì1990, degrees Celsius)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average yearly temperature (1961‚Äì1990, degrees Celsius)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Average yearly temperature (1961‚Äì1990, degrees Celsius)</remote-alias>
+            <ordinal>5</ordinal>
+            <layered>true</layered>
+            <family>drinks_join</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <layered>true</layered>
+            <family>drinks_join</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Majority Belief System</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Majority Belief System]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Majority Belief System</remote-alias>
+            <ordinal>8</ordinal>
+            <layered>true</layered>
+            <family>drinks_join</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>11</ordinal>
+            <layered>true</layered>
+            <caption>Number of Records</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;1&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>6</ordinal>
+            <layered>true</layered>
+            <family>drinks_join</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>avg_servings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_servings]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>avg_servings</remote-alias>
+            <ordinal>7</ordinal>
+            <layered>true</layered>
+            <caption>Avg Servings</caption>
+            <family>drinks_join</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>beer_servings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[beer_servings]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>beer_servings</remote-alias>
+            <ordinal>1</ordinal>
+            <layered>true</layered>
+            <caption>Beer Servings</caption>
+            <family>drinks_join</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>spirit_servings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[spirit_servings]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>spirit_servings</remote-alias>
+            <ordinal>2</ordinal>
+            <layered>true</layered>
+            <caption>Spirit Servings</caption>
+            <family>drinks_join</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>total_litres_of_pure_alcohol</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_litres_of_pure_alcohol]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>total_litres_of_pure_alcohol</remote-alias>
+            <ordinal>4</ordinal>
+            <layered>true</layered>
+            <caption>Total Litres Of Pure Alcohol</caption>
+            <family>drinks_join</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>wine_servings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wine_servings]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>wine_servings</remote-alias>
+            <ordinal>3</ordinal>
+            <layered>true</layered>
+            <caption>Wine Servings</caption>
+            <family>drinks_join</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='boolean' name='CAP_CREATE_TEMP_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES'>false</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_CASE_INSENSITIVE_CONTAINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_EXTRACT_RANGES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SORT_BY'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERIES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORTS_LODJOINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORT_ANALYTIC_FUNCTIONS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_TOP_N'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_USE_QUERY_FUSION'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_LEFT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_RIGHT'>true</attribute>
+              <attribute datatype='integer' name='charset'>0</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='datasource'>&quot;&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos; ?&gt;&#10;&#10;&lt;datasource :source-version=&apos;18.1&apos; formatted-name=&apos;drinks_join (drinks_join)&apos; inline=&apos;true&apos; version=&apos;18.1&apos; xml:base=&apos;https://10ay.online.tableau.com&apos; xmlns:user=&apos;http://www.tableausoftware.com/xml/user&apos;&gt;&#10;  &lt;repository-location id=&apos;drinks_joindrinks_join&apos; path=&apos;/t/mariosmundson/datasources&apos; revision=&apos;1.0&apos; site=&apos;mariosmundson&apos; /&gt;&#10;  &lt;connection channel=&apos;https&apos; class=&apos;sqlproxy&apos; dbname=&apos;drinks_joindrinks_join&apos; directory=&apos;/dataserver&apos; port=&apos;443&apos; server=&apos;10ay.online.tableau.com&apos;&gt;&#10;    &lt;relation name=&apos;sqlproxy&apos; table=&apos;[sqlproxy]&apos; type=&apos;table&apos; /&gt;&#10;    &lt;cols&gt;&#10;      &lt;map key=&apos;[Average yearly temperature (1961‚Äì1990, degrees Celsius)]&apos; value=&apos;[sqlproxy].[Average yearly temperature (1961‚Äì1990, degrees Celsius)]&apos; /&gt;&#10;      &lt;map key=&apos;[Country]&apos; value=&apos;[sqlproxy].[Country]&apos; /&gt;&#10;      &lt;map key=&apos;[Majority Belief System]&apos; value=&apos;[sqlproxy].[Majority Belief System]&apos; /&gt;&#10;      &lt;map key=&apos;[Number of Records]&apos; value=&apos;[sqlproxy].[Number of Records]&apos; /&gt;&#10;      &lt;map key=&apos;[Region]&apos; value=&apos;[sqlproxy].[Region]&apos; /&gt;&#10;      &lt;map key=&apos;[avg_servings]&apos; value=&apos;[sqlproxy].[avg_servings]&apos; /&gt;&#10;      &lt;map key=&apos;[beer_servings]&apos; value=&apos;[sqlproxy].[beer_servings]&apos; /&gt;&#10;      &lt;map key=&apos;[spirit_servings]&apos; value=&apos;[sqlproxy].[spirit_servings]&apos; /&gt;&#10;      &lt;map key=&apos;[total_litres_of_pure_alcohol]&apos; value=&apos;[sqlproxy].[total_litres_of_pure_alcohol]&apos; /&gt;&#10;      &lt;map key=&apos;[wine_servings]&apos; value=&apos;[sqlproxy].[wine_servings]&apos; /&gt;&#10;    &lt;/cols&gt;&#10;  &lt;/connection&gt;&#10;  &lt;aliases enabled=&apos;yes&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; datatype=&apos;real&apos; default-type=&apos;ordinal&apos; name=&apos;[Average yearly temperature (1961‚Äì1990, degrees Celsius)]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;ordinal&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Country]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; semantic-role=&apos;[Country].[ISO3166_2]&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Majority Belief System]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Number of Records]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; user:auto-column=&apos;numrec&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;1&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Count&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Region]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; semantic-role=&apos;[Country].[Name]&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Avg Servings&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[avg_servings]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Beer Servings&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[beer_servings]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Spirit Servings&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[spirit_servings]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Total Litres Of Pure Alcohol&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[total_litres_of_pure_alcohol]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Wine Servings&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[wine_servings]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Average yearly temperature (1961‚Äì1990, degrees Celsius)]&apos; derivation=&apos;Attribute&apos; name=&apos;[attr:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&apos; pivot=&apos;key&apos; type=&apos;quantitative&apos; /&gt;&#10;  &lt;column-instance column=&apos;[avg_servings]&apos; derivation=&apos;Attribute&apos; name=&apos;[attr:avg_servings:qk]&apos; pivot=&apos;key&apos; type=&apos;quantitative&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Average yearly temperature (1961‚Äì1990, degrees Celsius)]&apos; derivation=&apos;Avg&apos; name=&apos;[avg:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&apos; pivot=&apos;key&apos; type=&apos;quantitative&apos; /&gt;&#10;  &lt;column-instance column=&apos;[avg_servings]&apos; derivation=&apos;Avg&apos; name=&apos;[avg:avg_servings:qk]&apos; pivot=&apos;key&apos; type=&apos;quantitative&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Average yearly temperature (1961‚Äì1990, degrees Celsius)]&apos; derivation=&apos;None&apos; name=&apos;[none:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&apos; pivot=&apos;key&apos; type=&apos;quantitative&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Majority Belief System]&apos; derivation=&apos;None&apos; name=&apos;[none:Majority Belief System:nk]&apos; pivot=&apos;key&apos; type=&apos;nominal&apos; /&gt;&#10;  &lt;column-instance column=&apos;[avg_servings]&apos; derivation=&apos;None&apos; name=&apos;[none:avg_servings:qk]&apos; pivot=&apos;key&apos; type=&apos;quantitative&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Average yearly temperature (1961‚Äì1990, degrees Celsius)]&apos; derivation=&apos;Sum&apos; name=&apos;[sum:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&apos; pivot=&apos;key&apos; type=&apos;quantitative&apos; /&gt;&#10;  &lt;column-instance column=&apos;[avg_servings]&apos; derivation=&apos;Sum&apos; name=&apos;[sum:avg_servings:qk]&apos; pivot=&apos;key&apos; type=&apos;quantitative&apos; /&gt;&#10;  &lt;layout dim-ordering=&apos;alphabetic&apos; dim-percentage=&apos;0.377649&apos; measure-ordering=&apos;alphabetic&apos; measure-percentage=&apos;0.622351&apos; show-structure=&apos;true&apos; /&gt;&#10;  &lt;style&gt;&#10;    &lt;style-rule element=&apos;mark&apos;&gt;&#10;      &lt;encoding attr=&apos;color&apos; field=&apos;[:Measure Names]&apos; type=&apos;palette&apos;&gt;&#10;        &lt;map to=&apos;\#4e79a7&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;[drinks_join (drinks_join)].[attr:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;\#4e79a7&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;[drinks_join (drinks_join)].[avg:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;\#4e79a7&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;[drinks_join (drinks_join)].[none:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;\#4e79a7&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;[drinks_join (drinks_join)].[sum:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;\#f28e2b&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;[drinks_join (drinks_join)].[attr:avg_servings:qk]&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;\#f28e2b&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;[drinks_join (drinks_join)].[avg:avg_servings:qk]&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;\#f28e2b&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;[drinks_join (drinks_join)].[none:avg_servings:qk]&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;\#f28e2b&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;[drinks_join (drinks_join)].[sum:avg_servings:qk]&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;      &lt;/encoding&gt;&#10;      &lt;encoding attr=&apos;shape&apos; field=&apos;[none:Majority Belief System:nk]&apos; type=&apos;shape&apos;&gt;&#10;        &lt;map to=&apos;asterisk&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;Islam&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;circle&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;Buddhism&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;diamond&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;Judaism&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;down-triangle&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;Unaffiliated&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;plus&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;Folk Religions&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;square&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;Christianity&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;times&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;Hinduism&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;        &lt;map to=&apos;triangle&apos;&gt;&#10;          &lt;bucket&gt;&amp;quot;NA&amp;quot;&lt;/bucket&gt;&#10;        &lt;/map&gt;&#10;      &lt;/encoding&gt;&#10;    &lt;/style-rule&gt;&#10;  &lt;/style&gt;&#10;  &lt;semantic-values&gt;&#10;    &lt;semantic-value key=&apos;[Country].[Name]&apos; value=&apos;&amp;quot;United States&amp;quot;&apos; /&gt;&#10;  &lt;/semantic-values&gt;&#10;&lt;/datasource&gt;&#10;&quot;</attribute>
+              <attribute datatype='string' name='dialect-definition'>&quot;&lt;dialect-definition&gt;&#10;  &lt;primary-dialect class=&apos;hyper&apos; version=&apos;0.0.0&apos;&gt;&#10;  &lt;/primary-dialect&gt;&#10;&lt;/dialect-definition&gt;&#10;&quot;</attribute>
+              <attribute datatype='boolean' name='extract-active'>true</attribute>
+              <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
+              <attribute datatype='string' name='update-time'>&quot;11/10/2019 10:19:10 PM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <overridable-settings>
+        <date-options fiscal-year-start='january' start-of-week='sunday' />
+        <default-date-format />
+        <default-calendar-type>Gregorian</default-calendar-type>
+      </overridable-settings>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[Average yearly temperature (1961‚Äì1990, degrees Celsius)]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Majority Belief System]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Number of Records]' pivot='key' role='measure' type='quantitative' user-datatype='integer' user:auto-column='numrec' visual-totals='Default'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Region]' pivot='key' role='dimension' semantic-role='' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' caption='Avg Servings' datatype='real' default-type='quantitative' layered='true' name='[avg_servings]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Beer Servings' datatype='integer' default-type='quantitative' layered='true' name='[beer_servings]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' caption='Spirit Servings' datatype='integer' default-type='quantitative' layered='true' name='[spirit_servings]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' caption='Total Litres Of Pure Alcohol' datatype='real' default-type='quantitative' layered='true' name='[total_litres_of_pure_alcohol]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Wine Servings' datatype='integer' default-type='quantitative' layered='true' name='[wine_servings]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column-instance column='[Average yearly temperature (1961‚Äì1990, degrees Celsius)]' derivation='Attribute' name='[attr:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_servings]' derivation='Attribute' name='[attr:avg_servings:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Average yearly temperature (1961‚Äì1990, degrees Celsius)]' derivation='Avg' name='[avg:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_servings]' derivation='Avg' name='[avg:avg_servings:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_litres_of_pure_alcohol]' derivation='Avg' name='[avg:total_litres_of_pure_alcohol:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_servings]' derivation='Count' name='[cnt:avg_servings:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_servings]' derivation='CountD' name='[ctd:avg_servings:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Average yearly temperature (1961‚Äì1990, degrees Celsius)]' derivation='None' name='[none:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Majority Belief System]' derivation='None' name='[none:Majority Belief System:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[avg_servings]' derivation='None' name='[none:avg_servings:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Average yearly temperature (1961‚Äì1990, degrees Celsius)]' derivation='Sum' name='[sum:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_servings]' derivation='Sum' name='[sum:avg_servings:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_litres_of_pure_alcohol]' derivation='Sum' name='[sum:total_litres_of_pure_alcohol:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusions (Majority Belief System,Region)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Majority Belief System:nk]' />
+          <groupfilter function='level-members' level='[none:Region:nk]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.373494' measure-ordering='alphabetic' measure-percentage='0.626506' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[attr:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[avg:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[sum:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[avg:total_litres_of_pure_alcohol:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[sum:total_litres_of_pure_alcohol:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[attr:avg_servings:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[avg:avg_servings:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[cnt:avg_servings:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[ctd:avg_servings:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:avg_servings:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[sum:avg_servings:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[none:Majority Belief System:nk]' type='shape'>
+            <map to='asterisk'>
+              <bucket>&quot;Islam&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;Buddhism&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;Judaism&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;Unaffiliated&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;Folk Religions&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;Christianity&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;Hinduism&quot;</bucket>
+            </map>
+            <map to='triangle'>
+              <bucket>&quot;NA&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Majority Belief System:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Buddhism&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Islam&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Hinduism&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;NA&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Folk Religions&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Judaism&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Christianity&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Unaffiliated&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Global View: Avg Srvgs' />
+      <command command='tsc:brush'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Global View: Avg Srvgs' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Avg Servings by Belief System'>
+      <repository-location id='AvgServingsbyBeliefSystem' path='/t/mariosmundson/workbooks/AlcoholConsumptionproject' revision='' site='mariosmundson' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>Average Servings by Belief System</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='drinks_join (drinks_join) (2)' name='sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)' />
+          </datasources>
+          <datasource-dependencies datasource='sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)'>
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Majority Belief System]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[avg_servings]' derivation='Avg' name='[avg:avg_servings:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Avg Servings' datatype='real' default-type='quantitative' layered='true' name='[avg_servings]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column-instance column='[Majority Belief System]' derivation='None' name='[none:Majority Belief System:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Majority Belief System:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Majority Belief System:nk]' />
+              <groupfilter function='member' level='[none:Majority Belief System:nk]' member='&quot;NA&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Majority Belief System:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[avg:avg_servings:qk]' />
+              <text column='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Majority Belief System:nk]' />
+              <color column='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Majority Belief System:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Majority Belief System:&#9;</run>
+                <run bold='true'>&lt;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Majority Belief System:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg Servings:&#9;</run>
+                <run bold='true'>&lt;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[avg:avg_servings:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#333333' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D4BAF359-3370-41C3-9C79-60992A62823F}' />
+    </worksheet>
+    <worksheet name='Avg Servings by Region and Belief System'>
+      <repository-location id='AvgServingsbyRegionandBeliefSystem' path='/t/mariosmundson/workbooks/AlcoholConsumptionproject' revision='' site='mariosmundson' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Average Servings by Region and Belief System</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='drinks_join (drinks_join) (2)' name='sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)' />
+          </datasources>
+          <datasource-dependencies datasource='sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)'>
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Majority Belief System]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Region]' pivot='key' role='dimension' semantic-role='' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[avg_servings]' derivation='Avg' name='[avg:avg_servings:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Avg Servings' datatype='real' default-type='quantitative' layered='true' name='[avg_servings]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column-instance column='[Majority Belief System]' derivation='None' name='[none:Majority Belief System:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[Exclusions (Majority Belief System,Region)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:Majority Belief System:nk]' />
+                <groupfilter function='level-members' level='[none:Region:nk]' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:Majority Belief System:nk]' member='&quot;NA&quot;' />
+                <groupfilter function='member' level='[none:Region:nk]' member='&quot;Africa&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Region:nk]'>
+            <groupfilter function='level-members' level='[none:Region:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Region:nk]</column>
+            <column>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[Exclusions (Majority Belief System,Region)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[avg:avg_servings:qk]' />
+              <text column='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Region:nk]' />
+              <lod column='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Region:nk]' />
+              <color column='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Majority Belief System:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Majority Belief System:&#9;</run>
+                <run bold='true'>&lt;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Majority Belief System:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Region:&#9;</run>
+                <run bold='true'>&lt;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Region:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg Servings:&#9;</run>
+                <run bold='true'>&lt;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[avg:avg_servings:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{78AD0F3B-E9CD-4963-AF5B-8695F47C19F2}' />
+    </worksheet>
+    <worksheet name='Global View: Avg Srvgs'>
+      <layout-options export-orientation='landscape'>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>Majority Belief System by Country: Avg Servings of Alcohol</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/t/mariosmundson/workbooks/AlcoholConsumptionproject/Sheet1?rev=' id='GlobalViewAvgSrvgs' path='/t/mariosmundson/workbooks/AlcoholConsumptionproject' revision='' site='mariosmundson' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='drinks_join (drinks_join)' name='sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j'>
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Eswatini (Swaziland)&quot;' value='&quot;Eswatini&quot;' />
+              </semantic-values>
+            </column>
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Majority Belief System]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[avg_servings]' derivation='Avg' name='[avg:avg_servings:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Avg Servings' datatype='real' default-type='quantitative' layered='true' name='[avg_servings]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Majority Belief System]' derivation='None' name='[none:Majority Belief System:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[avg:avg_servings:qk]' included-values='in-range'>
+            <min>0.0</min>
+            <max>230.0</max>
+          </filter>
+          <filter class='categorical' column='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[none:Majority Belief System:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Majority Belief System:nk]' />
+              <groupfilter function='member' level='[none:Majority Belief System:nk]' member='&quot;NA&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[avg:avg_servings:qk]</column>
+            <column>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[none:Majority Belief System:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[Longitude (generated)]' field-type='quantitative' max='24228416.749838531' min='-14285136.770525139' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[Latitude (generated)]' field-type='quantitative' max='15283282.496723585' min='-10598206.187419947' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='size' field='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[avg:avg_servings:qk]' value='Avg Servings'>
+              <formatted-text>
+                <run>Avg Servings</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[avg:avg_servings:qk]' value='Avg Servings Filter'>
+              <formatted-text>
+                <run>Avg Servings Filter</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[none:Majority Belief System:nk]' />
+              <lod column='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[none:Country:nk]' />
+              <size column='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[avg:avg_servings:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'>&lt;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[none:Country:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Majority Belief System:&#9;</run>
+                <run bold='true'>&lt;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[none:Majority Belief System:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg Servings:&#9;</run>
+                <run bold='true'>&lt;[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[avg:avg_servings:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.44780001044273376' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#333333' />
+                <format attr='has-halo' value='false' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[Latitude (generated)]</rows>
+        <cols>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{0493BF6F-3905-485C-BC6C-7C7B11419F37}' />
+    </worksheet>
+    <worksheet name='Servings &amp; Temp Correlation'>
+      <repository-location id='ServingsTempCorrelation' path='/t/mariosmundson/workbooks/AlcoholConsumptionproject' revision='' site='mariosmundson' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Average Servings and Average Temp Correlation</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='drinks_join (drinks_join) (2)' name='sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)' />
+          </datasources>
+          <datasource-dependencies datasource='sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)'>
+            <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[Average yearly temperature (1961‚Äì1990, degrees Celsius)]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Country]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' caption='Avg Servings' datatype='real' default-type='quantitative' layered='true' name='[avg_servings]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Average yearly temperature (1961‚Äì1990, degrees Celsius)]' derivation='Sum' name='[sum:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[avg_servings]' derivation='Sum' name='[sum:avg_servings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Country:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#3636e4' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#000000e0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[sum:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]</rows>
+        <cols>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[sum:avg_servings:qk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true'>There is a weak negative correlation between average servings and average temperature.</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='181.01264367816091'>
+                  <node-reference>
+                    <axis>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[sum:avg_servings:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='17.949862068965523'>
+                  <node-reference>
+                    <axis>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[sum:Average yearly temperature (1961‚Äì1990, degrees Celsius):qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{60FC5C69-FBC9-449C-A372-368C13A34814}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='Global View: Avg Srvgs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+            <card type='title' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[none:Majority Belief System:nk]' type='color' />
+            <card param='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[avg:avg_servings:qk]' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[avg:avg_servings:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j].[none:Majority Belief System:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{7234CC9F-EB56-4130-AF08-CE0781DB1F00}' />
+    </window>
+    <window class='worksheet' name='Servings &amp; Temp Correlation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{BC5E281B-AE7F-4435-BFAF-2F6903E0C828}' />
+    </window>
+    <window class='worksheet' name='Avg Servings by Belief System'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Majority Belief System:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[:Measure Names]</field>
+            <field>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[avg:total_litres_of_pure_alcohol:qk]</field>
+            <field>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Majority Belief System:nk]</field>
+            <field>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Region:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{F1E750B2-A4F4-4990-A535-0F18A2D342F5}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Avg Servings by Region and Belief System'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Region:nk]' type='filter' />
+            <card pane-specification-id='0' param='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Majority Belief System:nk]' type='color' />
+            <card param='[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Region:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Country:nk]</field>
+            <field>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Majority Belief System:nk]</field>
+            <field>[sqlproxy.1z0xedp1sa8ex712x6s1r15ndu6j (copy)].[none:Region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B0E76528-4103-4343-9254-626343EA59F0}' />
+    </window>
+  </windows>
+</workbook>
